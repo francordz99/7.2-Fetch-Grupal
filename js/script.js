@@ -19,7 +19,7 @@ function showData(dataArray) {
 }
 
 // Escribe el código necesario para realizar el fetch al archivo con los datos y mostrar los estudiantes con la función showData
-
+let studentsGlobal = [];
 
 // Hacer una solicitud utilizando fetch
 fetch(DATA_URL)
@@ -38,7 +38,8 @@ fetch(DATA_URL)
     const estudiantes = dataNombres.students;
     showData(estudiantes);
 
-
+    studentsGlobal = estudiantes;
+    console.log(studentsGlobal);
   })
   .catch(error => {
     console.error('There was a problem with the fetch operation:', error);

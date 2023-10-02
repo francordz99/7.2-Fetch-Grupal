@@ -37,6 +37,11 @@
       "name": "Alejandro",
       "lastname": "Fandiño",
       "age": 40
+    },
+    {
+      "name": "Santiago",
+      "lastname": "Lopez",
+      "age": 54
     }
   ]
 }
